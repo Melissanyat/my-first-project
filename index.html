@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meteo App</title>
   </head>
-
   <link rel="stylesheet" href="style.css"/>
   <body>
     <div class="weather-app">
     <header>
       <div>
-      <form>
+      <form class="search-form" id="search-form">
         <input type="text" placeholder="Enter a city.." required class="search-form-input"/>
         <input type="submit" value="Search" class="search-form-button"/>
       </form>
@@ -20,7 +19,7 @@
     <main>
       <div class="weather-app-data"> 
       <div>
-        <h1 class="weather-app-city">South Africa</h1>
+        <h1 class="weather-app-city" id="city">South Africa</h1>
         <p class="weather-app-details">
           Tuesday 14:49, scattered clouds
           <br />
@@ -38,6 +37,6 @@
     This project was coded by Melissa, is open-sourced on GitHub and hosted on
     Netlify.
   </footer>
-
 </div>
+<script src="index.js"></script>
 </html>
